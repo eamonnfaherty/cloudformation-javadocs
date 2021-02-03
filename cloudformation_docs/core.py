@@ -45,9 +45,9 @@ TEMPLATE = """# {{ name }}
 The list of parameters for this template:
 {% for parameter in parameters %}
 ### {{ parameter }} 
-Type: {{ parameters[parameter].Type }} {% if parameters[parameter].Default %}
-Default: {{ parameters[parameter].Default}}{% endif %} {% if parameters[parameter].Description %}
-Description: {{ parameters[parameter].Description}}{% endif %} {% endfor %}
+- Type: {{ parameters[parameter].Type }} {% if parameters[parameter].Default %}
+- Default: {{ parameters[parameter].Default}}{% endif %} {% if parameters[parameter].Description %}
+- Description: {{ parameters[parameter].Description}}{% endif %} {% endfor %}
 
 ## Resources
 The list of resources this template creates:
